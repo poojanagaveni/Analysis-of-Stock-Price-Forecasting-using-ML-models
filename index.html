@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Water Quality Prediction</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('stock price pic.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+/* styling the header */
+
+.row2 h1 {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    left:45%;
+    color:blue;
+    top: 30px;
+    border-radius:5px;
+}
+
+main div.column input {
+    display: block;
+    position: relative;
+    margin: 24px 26px;
+    left: 30vw;
+    border-radius: 35px;
+    width: 250px;
+    height: 30px;
+}
+
+input[type="text"] {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main div.last input {
+    width: 256px;;
+    background: rgb(5, 3, 68);
+    background: linear-gradient(90deg, rgba(5, 3, 68, 1) 0%, rgba(0, 12, 36, 1) 0%, rgba(39, 9, 121, 1) 0%, rgba(38, 8, 114, 1) 0%, rgba(94, 0, 255, 1) 45%, rgba(188, 0, 255, 1) 84%);
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main div.last input:hover {
+    background: rgb(188, 0, 255);
+    background: linear-gradient(90deg, rgba(188, 0, 255, 1) 23%, rgba(94, 0, 255, 1) 63%, rgba(22, 9, 121, 1) 100%, rgba(5, 3, 68, 1) 100%, rgba(0, 12, 36, 1) 100%, rgba(38, 8, 114, 1) 100%);
+}
+
+.bor {
+    text-align: center;
+    margin:50px;
+    margin-left: 60vw;
+    color: rgb(7, 7, 7);
+    font-size: 21px;
+    border: 2px solid rgb(251, 253, 255);
+    width: 358px;
+    padding-left: 4px;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <div class="row2">
+                    <h1>Stock price prediction</h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="column">
+		<div class="bor">
+                </div>
+            <form action="/index" method="post">
+                <label for="symbol"></label>
+                <input type="text" name="symbol" id="" placeholder="Enter symbol">
+                <label for="date"></label>
+                <input type="text" name="date" id="" placeholder="Enter date">
+                <label for="high"></label>
+                <input type="text" name="high" id="" placeholder="Enter high value ">
+                <label for="low"></label>
+                <input type="text" name="low" id="" placeholder="Enter low value">
+                <label for="volume"></label>
+                <input type="text" name="volume" id="" placeholder="Enter volume ">
+                <label for="adjClose"></label>
+                <input type="text" name="adjClose" id="" placeholder="Enter adjclose ">
+                <label for="adjHigh"></label>
+                <input type="text" name="adjHigh" id="" placeholder="Enter adjHigh">
+                <label for="adjlow"></label>
+                <input type="text" name="adjlow" id="" placeholder="Enter adjlow">
+                <label for="adjOpen"></label>
+                <input type="text" name="adjOpen" id="" placeholder="Enter adjopen">
+                <div class="last">
+                    <input type="submit" value="Predict">
+                </div>
+            </form>
+        </div>
+    </main>
+    </div>
+</body>
+
+</html>
